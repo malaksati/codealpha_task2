@@ -1,0 +1,332 @@
+body {
+    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    background-color: #F2F4F7;
+}
+button:focus {
+    outline: none !important;
+    box-shadow: 0;
+}
+.login-page {
+    gap: 4rem;
+}
+.left-div h2 {
+    margin-left: 2rem;
+    font-size: 25px;
+}
+
+.form-login {
+    text-align: center;
+    background-color: #fff;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    box-sizing: border-box;
+    margin: 70px 0 0;
+    padding: 10px 15px 24px;
+}
+.form-login input {
+    font-size: 17px;
+    padding: 14px 16px;
+}
+.form-login button,
+.form-login a.reg {
+    background-color: #0866ff;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    line-height: 48px;
+    padding: 0 16px;
+    color: white;
+    width: 90%;
+    cursor: pointer;
+}
+.form-login a.reg {
+    width: auto;
+    padding: 16px;
+    background-color: #42B72A;
+    font-size: 18px;
+}
+.form-login a.reg:hover{
+    text-decoration: none;
+}
+@media (max-width: 991px){
+    .login-page {
+        flex-direction: column;
+        gap: 0rem !important;
+    }
+    .form-login {
+        width: 450px;
+    }
+    .left-div {
+        text-align: center;
+        width: 100% !important;
+    }
+    .left-div h2 {
+        margin: auto !important;
+        width: 75% !important;
+    }
+    .left-div img {
+        width: 50% !important;
+    }
+}
+.gender div {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 6px;
+    color: #5e5e5e;
+}
+.gender div label {
+    margin: 0;
+}
+button.reg {
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    width: auto;
+    padding: 8px 16px;
+    background-color: #42B72A;
+    font-size: 18px;
+    margin: auto;
+    display: block;
+}
+
+/* Navbar */
+.navbar {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.062), 0 8px 16px rgba(0, 0, 0, 0.048);
+    height: 65px;
+    width: 100%;
+    padding: 7px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    padding: 0;
+}
+.navbar ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+    gap: 3rem;
+} 
+
+
+.add-post,
+.post {
+    background-color: white;
+    padding: 15px;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px; 
+}
+
+.add-post a {
+    background-color: #F2F4F7;
+    color: #8b8b8b;
+    border-radius: 25px;
+    width: 100%;
+    padding: 10px 20px;
+    display: block;
+    text-align: start;
+}
+.comment button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.create-post textarea,
+.add-comment textarea {
+    background-color: transparent;
+    padding: 1rem;
+    border: none;
+    font-size: 22px;
+    width: 100%;
+    resize: none;
+    height: 170px;
+}
+.add-comment textarea {
+    height: auto;
+    font-size: 16px;
+    padding: 0 0 0 15px;
+}
+.create-post textarea:focus,
+.add-comment textarea:focus {
+    outline: none;
+}
+.create-post button:hover {
+    background-color: #0866ff;
+    color: #F2F4F7;
+}
+#img-preview {
+    /* display: none;  */
+    width: 100%;
+    margin-bottom: 15px;
+}
+#img-preview img {  
+    width: 100%;
+    height: auto; 
+    display: block;   
+}
+.profile .header {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+.profile .header .image-cover {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.profile .header .image-cover img {
+    width: 100%;
+}
+.profile .header .image-profile {
+    position: absolute;
+    bottom: -6rem;
+    left: 2rem;
+    border-radius: 50%;
+    width: 150px;
+}
+.profile .header .image-profile img {
+    width: 100%;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+.profile .name {
+    float: left;
+    margin: 1rem 0 0 12.5rem;
+}
+.profile .name h1 {
+    font-weight: 500;
+}
+.profile .edit {
+    float: right;
+}
+.profile .edit a,
+.edit-p .edit button {
+    color: #333;
+    background-color: #F2F4F7;
+    border-radius: 25px;
+    margin: 1rem;
+}
+
+.profile .content {
+    width: 100%;
+    margin: 7rem 0 2rem;
+    gap: 2rem;
+    align-items: flex-start;
+}
+@media (max-width: 991px) {
+    .profile .content {
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 80%;
+        margin: 7rem auto 2rem;
+    }
+    .profile .content .section {
+        width: 100% !important;
+    }
+}
+
+.profile .content .main {
+    flex: 1;
+}
+.profile .content .main .post {
+    background-color: #F2F4F7;
+    border-radius: 25px !important;
+
+}
+.profile .content .section {
+    width: 35%;
+    background-color: #F2F4F7;
+    padding: 1rem;
+    border-radius: 25px !important;
+}
+.profile .add-post {
+    background-color: #F2F4F7 !important;
+    border-radius: 25px !important;
+}
+.profile .add-post .button {
+    width: 100% !important;
+}
+.profile .add-post a {
+    background-color: white !important;
+    width: 100% !important;
+}
+.profile .add-post .image  img{ 
+    border-radius: 50%;
+}
+
+
+.edit-p .section {
+    margin: 7rem 2rem auto;
+    background-color: #F2F4F7;
+    padding: 1rem;
+    border-radius: 25px !important;
+}
+.edit-p #img-preview {
+    /* display: none;  */
+    width: auto;
+    margin-bottom: 0;
+}
+.edit-p #img-preview img.img-p {  
+    width: 150px;
+    height: auto; 
+    display: block;   
+}
+.edit-p .edit-cover,
+.edit-p .edit-profile {
+    cursor: pointer;
+    position: absolute;
+    padding: 10px 10px;
+    border-radius: 50%;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #5e5e5e;
+}
+.edit-p .edit-cover {
+    bottom: 26px;
+    right: 10px;
+}
+.edit-p .edit-profile {
+    left: 140px;
+    bottom: -95px;
+}
+.edit-p input,
+.edit-p select {
+    border: none;
+    background-color: transparent;
+    font-size: 22px;
+    border-bottom: 2px solid gray;
+    color: #5e5e5e;
+    padding: 0 10px;
+    width: 250px;
+}
+.edit-p input:focus {
+    outline: none;
+}
+.edit-p table {
+    border-collapse: collapse;
+}
+.edit-p table td {
+    padding: 10px 0;
+}
